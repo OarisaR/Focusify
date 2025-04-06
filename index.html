@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focusify</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&family=Finger+Paint&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img src="logo.png" alt="Focusify Logo" class="logo" />
+    <div class="timer-circle">
+      <div class="curved-text" id="curved-text"></div>
+      <i class="fas fa-clock"></i>
+    </div>
+
+    <div id="pomo-view" class="pomo-view hidden">
+      <div class="glass-panel pomo-panel">
+        <div class="pomo-divider"></div>
+        <div class="music-player">
+          <div class="cover-art">
+            <img src="pomo.jpg" alt="Music Cover" />
+            <div class="cover-text">
+              <h1>Pomodoro</h1>
+              <p>Deep focus</p>
+            </div>
+          </div>
+          <div class="player-controls">
+            <div class="top-controls">
+              <div class="heart-btn">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+            
+            <div class="progress-container">
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <div class="time">25:00</div>
+            </div>
+            <div class="playback-controls">
+              <button class="control-btn prev-btn">
+                <i class="fas fa-backward"></i>
+              </button>
+              <button class="play-btn">
+                <i class="fas fa-play"></i>
+              </button>
+              <button class="control-btn next-btn">
+                <i class="fas fa-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="tracks-section">
+          <h2 class="tracks-heading">TRACKS</h2>
+          <div class="track-list">
+            <div class="track-item">
+              <div class="track-thumb">
+                <img src="pomo.jpg" alt="Track thumbnail" />
+              </div>
+              <div class="track-info">
+                <h3>Pomodoro</h3>
+                <p>Deep Focus</p>
+              </div>
+              <div class="track-duration">25:00</div>
+            </div>
+            <div class="track-divider"></div>
+            
+            <div class="track-item">
+              <div class="track-thumb">
+                <img src="short.jpeg" alt="Track thumbnail" />
+              </div>
+              <div class="track-info">
+                <h3>Short break</h3>
+                <p>Quick refresh</p>
+              </div>
+              <div class="track-duration">5:00</div>
+            </div>
+            <div class="track-divider"></div>
+            
+            <div class="track-item">
+              <div class="track-thumb">
+                <img src="long.jpg" alt="Track thumbnail" />
+              </div>
+              <div class="track-info">
+                <h3>Long break</h3>
+                <p>Full recharge</p>
+              </div>
+              <div class="track-duration">10:00</div>
+            </div>
+            <div class="track-divider"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="glass-panel left-panel">
+        <div class="header">
+          <h2>Tasks</h2>
+          <button id="add-task-btn">Add new task</button>
+        </div>
+        <div id="active-tasks" class="task-list">
+          <!-- Active tasks will appear here -->
+        </div>
+      </div>
+      
+      <div class="glass-panel right-panel">
+        <div class="header">
+          <h2>Done and dusted !</h2>
+        </div>
+        <div id="archived-tasks" class="task-list">
+          <!-- Archived tasks will appear here -->
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
