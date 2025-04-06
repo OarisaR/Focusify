@@ -6,7 +6,7 @@ Whether you're a student, creative, or just someone trying to stay organized, Fo
 
 ## ✨ Features
 
-- 📝 **Focus List** – Add, edit, and check off your tasks with ease  
+- 📝 **Focus List** – Add and check off your tasks with ease  
 - ⏳ **Pomodoro Timer** – Stay in the zone with focused work sessions and calming breaks  
 - 🌈 **Ghibli-Inspired UI** – A soft, colorful design that makes productivity feel magical  
 - 🗂️ **Archived Tasks** – Completed tasks are saved to an archive, giving you a lasting sense of accomplishment   
